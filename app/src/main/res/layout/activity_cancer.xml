@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616161"
+    tools:context=".CancerActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/line1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ee" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/line2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/radiusmean"
+                    android:hint="Radius mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/texturemean"
+                    android:hint="Texture mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/perimetermean"
+                    android:hint="Perimeter mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/areamean"
+                    android:hint="Area mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/smoothnessmean"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Smoothness mean"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/compactnessmean"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Compactness mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/concavitymean"
+                    android:hint="Concavity mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/concavepointsmean"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Concave Points mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/symmetrymean"
+                    android:hint="Symmetry mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/fractaldimensionmean"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Fractal dimension mean"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/radiusse"
+                    android:hint="Radius SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/texturese"
+                    android:hint="Texture SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/perimeterse"
+                    android:hint="Perimeter SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/arease"
+                    android:inputType="numberDecimal"
+
+                    android:hint=" Area SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/smoothnessse"
+                    android:hint="Smoothness SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/compactnessse"
+                    android:hint="Compactness SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/concavityse"
+                    android:hint="Concavity SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/concavepointsse"
+                    android:hint="Concave points SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/symmetryse"
+                    android:hint="Symmetry SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/fractaldimensionse"
+                    android:hint="Fractal dimension SE"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:inputType="numberDecimal"
+
+                    android:layout_height="40dp"
+                    android:id="@+id/radiusworst"
+                    android:hint="Radius Worst"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/textureworst"
+                    android:hint="Texture Worst"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/perimeterworst"
+                    android:hint="Perimeter Worst"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/areaworst"
+                    android:hint="Area Worst"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/smoothnessworst"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Smoothness Worst"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/compactnessworst"
+                    android:hint="Compactness Worst"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/concavityworst"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Concavity Worst"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/concavepointsworst"
+                    android:hint="Concave points Worst"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/symmetry_worst"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Symmetry Worst"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/fractaldimensionworst"
+                    android:hint="Fractal dimension Worst"/>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line3"
+        android:layout_centerVertical="true">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Reset"
+        android:layout_marginRight="5dp"
+        android:id="@+id/resetButton"
+
+        />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/submitButton"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/line3"
+        android:id="@+id/result"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Result will appear here"
+        android:textSize="18sp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiabetesActivity"
+    android:background="#616161"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lineblooddrop"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blooddrop"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineparameters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lineblooddrop"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/pregnancies"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Pregnancies"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/glucose"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Glucose"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/bloodpressure"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Blood pressure"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/skinthickness"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Skin thickness"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/insulin"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Insulin"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/bmi"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="BMI"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/dpf"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Diabetes Pedigree Function"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/age"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:hint="Age"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linebuttons"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lineparameters">
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:text="reset"
+            />
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitButton"
+            android:layout_marginTop="15dp"
+            android:text="submit"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/linebuttons"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Result will appear here!"
+            android:textSize="20sp"
+            android:id="@+id/result"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
