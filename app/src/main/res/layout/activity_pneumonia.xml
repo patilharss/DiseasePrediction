@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pneumonia">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imgv"
+            android:src="@drawable/phneu"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/selectbtn"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Predict"
+            android:id="@+id/predictbtn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="#E91E63"
+            android:id="@+id/tv"
+            android:textSize="20sp"
+            android:text="precication will appear here"/>
+    </LinearLayout>
+</RelativeLayout>
