@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    CardView diabetesButton,cancerButton,pneumoniaButton;
+    CardView diabetesButton,cancerButton,pneumoniaButton,maleriaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         diabetesButton=findViewById(R.id.dbutton);
         cancerButton=findViewById(R.id.cancerButton);
         pneumoniaButton=findViewById(R.id.pbutton);
+        maleriaButton=findViewById(R.id.maleriabutton);
 
         diabetesButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
                Intent i = new Intent(getApplicationContext(),Pneumonia.class);
                startActivity(i);
            }
+        });
+
+        maleriaButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=new Intent(getApplicationContext(),MaleriaActivity.class);
+                startActivity(i);
+            }
         });
 
     }

@@ -10,11 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DiseasePrediction">
         <activity
-            android:name=".Pneumonia"
-            android:label="Pneumonia"
+            android:name=".MaleriaActivity"
+            android:label="Maleria"
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             />
+        <activity
+            android:name=".Pneumonia"
+            android:label="Pneumonia"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".CancerActivity"
             android:label="Cancer"
