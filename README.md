@@ -27,4 +27,3 @@ It predicts using three different machine learning algorithms.So,the output is a
 
 **Numpy**
 
- 
