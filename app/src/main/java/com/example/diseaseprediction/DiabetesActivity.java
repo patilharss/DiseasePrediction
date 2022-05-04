@@ -80,6 +80,10 @@ public class DiabetesActivity extends AppCompatActivity {
                 else {
 
                     float f = inferance(preg.getText().toString(), glucose.getText().toString(), bp.getText().toString(), st.getText().toString(), insulin.getText().toString(), bmi.getText().toString(), dpf.getText().toString(), age.getText().toString());
+                    f= (float) (Math.round(f*100.0)/100.0);
+                    if (f>=1){
+                        f=(float)98.49;
+                    }
                     result.setText("Probability that you are diabetic is: "+ f + "%");
 
                     if (f > 0.5) {
