@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DiseasePrediction">
         <activity
+            android:name=".HeartActivity"
+            android:exported="false" />
+        <activity
             android:name=".CancerActivity"
             android:label="Cancer"
             android:parentActivityName=".MainActivity"

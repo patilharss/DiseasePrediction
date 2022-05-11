@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616161"
+    tools:context=".CancerActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/line1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ee" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/line2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/age"
+                    android:hint="Age"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/sex"
+                    android:hint="Sex(1:Male,0:Female)"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/cpain"
+                    android:hint="Chest pain type"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/trestbps"
+                    android:hint="Trestbps"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/smoothnessmean"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Serum cholestoral in mg/dl"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/serum"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Serum cholestoral in mg/dl"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/restecg"
+                    android:hint="Restecg"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/thalach"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Thalach"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/exang"
+                    android:hint="Exang"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/oldpeak"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Oldpeak"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/slope"
+                    android:hint="Slope"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+
+                    android:id="@+id/thal"
+                    android:hint="Thal"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line3"
+        android:layout_centerVertical="true">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Reset"
+            android:layout_marginRight="5dp"
+            android:id="@+id/resetButton"
+
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/submitButton"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/line3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Result will appear here"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>
