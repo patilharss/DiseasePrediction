@@ -46,18 +46,18 @@ public class MainActivity extends AppCompatActivity {
         pneumoniaButton.setOnClickListener(new View.OnClickListener(){
            @Override
             public void onClick(View v){
-               Intent i = new Intent(getApplicationContext(),Pneumonia.class);
+               Intent i = new Intent(getApplicationContext(),HeartActivity.class);
                startActivity(i);
            }
         });
-
-        maleriaButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent i=new Intent(getApplicationContext(),MaleriaActivity.class);
-                startActivity(i);
-            }
-        });
+//
+//        maleriaButton.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Intent i=new Intent(getApplicationContext(),MaleriaActivity.class);
+//                startActivity(i);
+//            }
+//        });
 
     }
 }

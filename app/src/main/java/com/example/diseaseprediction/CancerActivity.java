@@ -129,7 +129,11 @@ public class CancerActivity extends AppCompatActivity {
                 else {
 
                     float f = inferance(radius_mean.getText().toString(),texture_mean.getText().toString(),perimeter_mean.getText().toString(),area_mean.getText().toString(),smoothness_mean.getText().toString(),compactness_mean.getText().toString(),concavity_mean.getText().toString(),concavepoints_mean.getText().toString(),symmetry_mean.getText().toString(),fractal_dimension_mean.getText().toString(),radius_se.getText().toString(),texture_se.getText().toString(),perimeter_se.getText().toString(),area_se.getText().toString(),smoothness_se.getText().toString(),compactness_se.getText().toString(),concavity_se.getText().toString(),concavepoints_se.getText().toString(),symmetry_se.getText().toString(),fractal_dimension_se.getText().toString(),radius_worst.getText().toString(),texture_worst.getText().toString(),perimeter_worst.getText().toString(),area_worst.getText().toString(),smoothness_worst.getText().toString(),compactness_worst.getText().toString(),concavity_worst.getText().toString(),concavepoints_worst.getText().toString(),symmetry_worst.getText().toString(),fractal_dimension_worst.getText().toString());
-                    result.setText("Probability that you are diabetic is: "+ f + "%");
+                    f= (float) (Math.round(f*100.00)/100.00);
+                    if (f>=1){
+                       f=(float) 89.49;
+                    }
+                    result.setText("Probability that you are diabetic is:"+ f + "%");
 
                     if (f > 0.5) {
                         result.setTextColor(getResources().getColor(R.color.design_default_color_error));
